@@ -1,0 +1,20 @@
+*
+{
+ text-shadow:1px 1px 1px black;
+}
+@font-face {
+      font-family: 'File';
+       src: url('../fonts/File.otf');
+      font-family: 'FiraSans Light';
+       src: url('../fonts/FiraSans-Light.otf');
+        }
+
+body{
+       font-family: 'FiraSans Light';
+       background-color:#f4a214;
+       margin-left:10px;
+       margin-right:10px;
+       margin-top:10px;
+       overflow-y:hidden;
+       overflow-x:hidden;
+}

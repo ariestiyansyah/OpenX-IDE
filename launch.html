@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/launch.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+    <script type="text/javascript">
+            $('#splash').ready() 
+            {
+                $('#main').load('index.html');
+                setTimeout(function() {
+                    $('#main').ready(function() {
+                        $('#splash').remove();
+                        window.location.href = "index.html";
+                    });
+                }, 4000);
+            }
+        </script>    
+        <div id="splash">
+        <center><br>
+        <br><br><br>
+        <img src="icon/logo.svg" height="125" width="125"><br/><br/>
+        <span style="font-size:20px; color:white; ">
+        Welcome to OpenX IDE<br>Version 1.0.1<br><br></span>
+        <progress>Splash Screen Working..</progress> 
+        </center>
+        <div id="main">
+        </div>    
+        </div>
+    </body>
+</html>

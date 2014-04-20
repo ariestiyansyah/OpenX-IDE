@@ -1,0 +1,193 @@
+@import url('fonts.css');
+
+body{
+ 
+    width: 100%;
+    height: 100%;
+    
+    font-family: 'FiraSans';
+    font-weight: 300;
+    font-size: 17.5px;
+           
+}
+
+@font-face{
+    
+    font-family: 'fira_sans_otlight';
+    src: url('FiraSansOT-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('FiraSansOT-Light-webfont.woff') format('woff'),
+         url('FiraSansOT-Light-webfont.ttf') format('truetype'),
+         url('FiraSansOT-Light-webfont.svg#fira_sans_otlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+progress:not([value]) {
+  background: url(images/default.png) no-repeat center center / 100% auto;
+  animation: 0.9s rotate infinite steps(30);
+  width: 2.9rem;
+  height: 2.9rem;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+    position: fixed;
+}
+
+progress:not([value])::-moz-progress-bar {
+ background: none;
+}
+
+/* Progress bar */
+progress[value] {
+  width: 100%;
+  background: #333;
+  border: none;
+  border-radius: 0.3rem;
+  height: 0.3rem;
+  display: block;
+  position: fixed;
+}
+
+progress[value]::-moz-progress-bar {
+  background: #01c5ed;
+  border-radius: 0;
+}
+
+/* Progress bar */
+progress[value].pack-activity {
+  background-image: url(progress_activity/images/ui/activity.png);
+  background-repeat: repeat;
+  background-size: auto 100%;
+  animation: 0.5s move infinite steps(15);
+}
+
+.tres{
+    
+     
+    background-image: url(../img/html5.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    
+}
+
+header{
+    
+    width:100%;
+    height: 44px;
+
+    line-height: 44px;
+    z-index: 1;
+    
+    display: block;
+
+    color: #fff;
+    
+}
+
+.header{
+ 
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 1px 0 #03b1ff, inset 0 -1px 0 #007db5;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 1px 0 #03b1ff, inset 0 -1px 0 #007db5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 1px 0 #03b1ff, inset 0 -1px 0 #007db5;
+
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    
+}
+
+
+
+.div-arriba{
+    
+  
+
+    
+    background: #DDDDDD;
+    
+    color: black;   
+    
+    
+    padding: 25px;
+
+    
+}
+
+.div-abajo{
+
+
+
+    color: black;
+    
+    box-shadow: -5px 5px 5px #bababa;
+
+    padding: 25px;
+
+    
+}
+
+.btn{
+ display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.428571429;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}   
+
+
+.caja{
+color: #fff;
+background-color: #428bca;
+border-color: #357ebd;
+}
+    
+.caja:hover{
+    
+    background-color: #88bd32;
+
+border-color: #88bd32;
+cursor: pointer;
+text-decoration: none;
+    
+}
+
+.caja:active {
+	position:relative;
+	top:1px;
+}
+
+    
+.cajon {
+  padding: 10px;
+  padding-top: 5px;
+    padding-bottom: 13px;
+  background-color: white;
+  min-width: 200px;
+  max-width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 1px 10px rgba(0,0,0,.4);
+  -webkit-transition: opacity 0.1s ease-out;
+     -moz-transition: opacity 0.1s ease-out;
+      -ms-transition: opacity 0.1s ease-out;
+       -o-transition: opacity 0.1s ease-out;
+          transition: opacity 0.1s ease-out;
+    height: 10px;
+  
+}
